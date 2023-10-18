@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity bi_de is
+port ( BI : in  STD_LOGIC_VECTOR (4 downto 0);
+       DE : out STD_LOGIC_VECTOR (7 downto 0));
+end bi_de ;
+
+architecture Deco of bi_de is
+   begin
+       with BI select
+DE<= "00000001" when "00000",
+"0000001" when "00001",
+
+end architecture;
